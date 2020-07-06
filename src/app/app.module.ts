@@ -20,6 +20,7 @@ import { ToolbarComponent } from './toolbar/toolbar.component';
 import { RegFormComponent } from './reg-form/reg-form.component';
 import { ErrorComponent } from './error/error.component';
 import { AlertComponent } from './alert/alert.component';
+import { AuthFormComponent } from './auth-form/auth-form.component';
 
 
 
@@ -29,7 +30,8 @@ import { AlertComponent } from './alert/alert.component';
     ToolbarComponent,
     RegFormComponent,
     ErrorComponent,
-    AlertComponent
+    AlertComponent,
+    AuthFormComponent
   ],
   imports: [
     BrowserModule,
