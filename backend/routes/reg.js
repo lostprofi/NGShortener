@@ -47,7 +47,7 @@ router.post('/reg', [
     });
 
     await user.save();
-    return res.status(201).send('User successfully registered ');
+    return res.status(201).json('User successfully registered ');
   } catch (err) {
     return res.status(500).json({ errors: [{ msg: 'Server error' }] });
   }

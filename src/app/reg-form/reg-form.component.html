@@ -1,5 +1,5 @@
 <mat-card>
-    <form #regForm="ngForm">
+    <form #regForm="ngForm" (ngSubmit)="onSubmit(regForm)">
         <mat-form-field>
           <mat-label>Username</mat-label>
           <input matInput name="username" type="text" ngModel #username="ngModel" minlength="3" required >
@@ -17,8 +17,8 @@
         </mat-form-field>
         <mat-form-field>
           <mat-label>Confirm password</mat-label>
-          <input matInput name="confirm" type="passsword" ngModel #confirmPassword="ngModel" required>
-          <mat-error *ngIf="confirmPassword.invalid">Please confirm password</mat-error>
+          <input matInput name="passwordConfirm" type="password" ngModel #passwordConfirm="ngModel" required>
+          <mat-error *ngIf="passwordConfirm.invalid">Please confirm password</mat-error>
         </mat-form-field>
         <button mat-raised-button type="submit">Sign Up</button>
       </form>
